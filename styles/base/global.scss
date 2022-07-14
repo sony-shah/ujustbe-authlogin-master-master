@@ -1,0 +1,101 @@
+.navboxshadowlight{
+  
+    -webkit-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.05);
+    -moz-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.05);
+    box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.05);
+}
+
+.boxshadowdark{
+    -webkit-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.1);
+    box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.1);
+
+}
+.wrapper{
+    width: 100%;
+    padding: 0px 15px ;
+    background-color: #FFF;
+    // height: 70px;
+    @extend.boxshadowdark;
+}
+.box{
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: 6px;
+    // overflow-y: scroll;
+    @extend .boxshadowdark;
+    padding: 35px;
+
+    h2{
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a{
+          cursor: pointer;
+          text-decoration: none;
+          background-color: #16274f;
+          padding: 10px;
+          color: #fff;
+          border-radius: 4px;
+          font-weight: 400;
+
+        }
+    }
+    
+}
+
+
+.box-shadow {
+    box-shadow: 1px 1px 5px -2px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 1px 5px -2px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 1px 5px -2px rgba(0, 0, 0, 0.5);
+}
+
+.anim {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+table{
+    // border: 1px solid #201f1f;
+    border-collapse: collapse;
+    width: 100%;
+    th{
+      font-weight: 700;
+      color: #505D69;
+      font-size: 18px;
+      padding: 10px;
+      // border: 1px solid #201f1f;
+      border: 1px solid #f1f1f1;
+
+    }
+    tbody{
+      tr{
+        td{
+          border: 1px solid #f1f1f1;
+          padding: 10px;
+          vertical-align: middle;
+          // width: 100%;
+          &.tdzoomlink{
+            width: 30%;
+          }
+
+          img{
+            
+            max-width: 80px;
+            width: 100%;
+          }
+        }
+        &:nth-child(even){
+          background-color: #f1f5f7;    
+        }
+      }
+    }
+   }
